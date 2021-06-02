@@ -24,39 +24,40 @@ function MyApp({ Component, pageProps }) {
 					href="/"
 					className="flex items-center justify-center w-1/4 py-4 text-center"
 				>
-					{({ isActive }) => (
-						<HomeIcon
-							className={`p-px w-7 h-7  ${
-								isActive
-									? 'text-blue-500'
-									: 'text-gray-500'
-							}`}
-						/>
-					)}
+					{({ isActive }) =>
+						isActive ? (
+							<HomeIcon className="p-px w-7 h-7 text-blue-500" />
+						) : (
+							<HomeIconEmpty className="p-px w-7 h-7 text-gray-500" />
+						)
+					}
 				</Link>
 				<Link href="/explore">
-					<a
-						className="flex items-center justify-center w-1/4 py-4 text-center"
-						href=""
-					>
-						<SearchIcon className="p-px w-7 h-7" />
-					</a>
+					{({ isActive }) =>
+						isActive ? (
+							<SearchIcon className="p-px w-7 h-7 text-blue-500" />
+						) : (
+							<SearchIconEmpty className="p-px w-7 h-7 text-gray-500" />
+						)
+					}
 				</Link>
 				<Link href="/notifications">
-					<a
-						className="flex items-center justify-center w-1/4 py-4 text-center"
-						href=""
-					>
-						<BellIcon className="p-px w-7 h-7" />
-					</a>
+					{({ isActive }) =>
+						isActive ? (
+							<BellIcon className="p-px w-7 h-7 text-blue-500" />
+						) : (
+							<BellIconEmpty className="p-px w-7 h-7 text-gray-500" />
+						)
+					}
 				</Link>
 				<Link href="/messages">
-					<a
-						className="flex items-center justify-center w-1/4 py-4 text-center"
-						href=""
-					>
-						<MailboxIcon className="p-px w-7 h-7" />
-					</a>
+					{({ isActive }) =>
+						isActive ? (
+							<MailboxIcon className="p-px w-7 h-7 text-blue-500" />
+						) : (
+							<MailboxIconEmpty className="p-px w-7 h-7 text-gray-500" />
+						)
+					}
 				</Link>
 			</footer>
 		</div>
