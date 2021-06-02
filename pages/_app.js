@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
 					className="rounded-full w-7 h-7"
 				/>
 				<p className="text-lg ml-6 font-extrabold">
-					Latest Tweets
+					{Component.headerTitle}
 				</p>
 			</header>
 

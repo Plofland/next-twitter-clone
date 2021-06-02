@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 export default function Messages() {
-    return (
-        <p>
-            Messages
-        </p>
-    )
+	return <p>Messages</p>;
 }
+
+Messages.headerTitle = 'Messages';
