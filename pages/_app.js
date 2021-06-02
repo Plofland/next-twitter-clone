@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+import Link from 'next/Link';
 
 function MyApp({ Component, pageProps }) {
 	return (
@@ -17,30 +18,38 @@ function MyApp({ Component, pageProps }) {
 				<Component {...pageProps} />
 			</main>
 			<footer className="flex border-t">
-				<a
-					className="flex items-center justify-center w-1/4 py-4 text-center"
-					href=""
-				>
-					<HomeIcon className="p-px w-7 h-7" />
-				</a>
-				<a
-					className="flex items-center justify-center w-1/4 py-4 text-center"
-					href=""
-				>
-					<SearchIcon className="p-px w-7 h-7" />
-				</a>
-				<a
-					className="flex items-center justify-center w-1/4 py-4 text-center"
-					href=""
-				>
-					<BellIcon className="p-px w-7 h-7" />
-				</a>
-				<a
-					className="flex items-center justify-center w-1/4 py-4 text-center"
-					href=""
-				>
-					<MailboxIcon className="p-px w-7 h-7" />
-				</a>
+				<Link href="/">
+					<a
+						className="flex items-center justify-center w-1/4 py-4 text-center"
+						href=""
+					>
+						<HomeIcon className="p-px w-7 h-7" />
+					</a>
+				</Link>
+				<Link href="/explore">
+					<a
+						className="flex items-center justify-center w-1/4 py-4 text-center"
+						href=""
+					>
+						<SearchIcon className="p-px w-7 h-7" />
+					</a>
+				</Link>
+				<Link href="/notifications">
+					<a
+						className="flex items-center justify-center w-1/4 py-4 text-center"
+						href=""
+					>
+						<BellIcon className="p-px w-7 h-7" />
+					</a>
+				</Link>
+				<Link href="/messages">
+					<a
+						className="flex items-center justify-center w-1/4 py-4 text-center"
+						href=""
+					>
+						<MailboxIcon className="p-px w-7 h-7" />
+					</a>
+				</Link>
 			</footer>
 		</div>
 	);
