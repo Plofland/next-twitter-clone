@@ -1,7 +1,7 @@
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 
-export default function Link({
+export function Link({
 	href,
 	activeClassName,
 	inactiveClassName,
@@ -21,7 +21,9 @@ export default function Link({
 
 	return (
 		<NextLink href={href} {...rest}>
-			<a>{children({ isActive })}</a>
+			<a className={currentClassName}>
+				{children({ isActive })}
+			</a>
 		</NextLink>
 	);
 }

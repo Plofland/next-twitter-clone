@@ -32,7 +32,10 @@ function MyApp({ Component, pageProps }) {
 						)
 					}
 				</Link>
-				<Link href="/explore">
+				<Link
+					href="/explore"
+					className="flex items-center justify-center w-1/4 py-4 text-center"
+				>
 					{({ isActive }) =>
 						isActive ? (
 							<SearchIcon className="p-px w-7 h-7 text-blue-500" />
@@ -41,7 +44,10 @@ function MyApp({ Component, pageProps }) {
 						)
 					}
 				</Link>
-				<Link href="/notifications">
+				<Link
+					href="/notifications"
+					className="flex items-center justify-center w-1/4 py-4 text-center"
+				>
 					{({ isActive }) =>
 						isActive ? (
 							<BellIcon className="p-px w-7 h-7 text-blue-500" />
@@ -50,7 +56,10 @@ function MyApp({ Component, pageProps }) {
 						)
 					}
 				</Link>
-				<Link href="/messages">
+				<Link
+					href="/messages"
+					className="flex items-center justify-center w-1/4 py-4 text-center"
+				>
 					{({ isActive }) =>
 						isActive ? (
 							<MailboxIcon className="p-px w-7 h-7 text-blue-500" />
