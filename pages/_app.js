@@ -1,5 +1,6 @@
 import '../styles/globals.css';
 import { Link } from '../components/Link';
+import '../server.js';
 
 function MyApp({ Component, pageProps }) {
 	return (
