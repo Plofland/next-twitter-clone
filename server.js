@@ -30,7 +30,7 @@ let server = createServer({
 				return lorem.sentence();
 			},
 
-			avatarUrl() {
+			avatarURL() {
 				return image.avatar();
 			},
 
@@ -66,7 +66,7 @@ let server = createServer({
 		server.create('tweet', 'fromPeter', {
 			text: 'Never used SWR before this'
 		});
-		server.createList('tweet', 3);
+		server.createList('tweet', 30);
 	}
 });
 
