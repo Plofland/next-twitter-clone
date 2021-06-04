@@ -42,8 +42,8 @@ let server = createServer({
 
 			fromPeter: trait({
 				name: 'Peter Lofland',
-				userName: 'Peterlofland',
-				avatarUrl:
+				username: 'PeterLofland',
+				avatarURL:
 					'https://pbs.twimg.com/profile_images/1175804192197361664/BCMBEZcf_400x400.jpg'
 			})
 		})
