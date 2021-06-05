@@ -52,8 +52,14 @@ let server = createServer({
 	routes() {
 		this.namespace = 'api';
 		this.get('tweets');
-
-		this.passthrough();
+		this.passthrough((request) => {
+			if (
+				request.url ===
+				'/_next/static/development/_devPagesManifest.json'
+			)
+				return true;
+		}),
+			this.passthrough();
 	},
 
 	seeds(server) {
