@@ -1,10 +1,10 @@
-import { format, parseISO } from 'date-fns';
 import useSWR from 'swr';
+import { format, parseISO } from 'date-fns';
 
 const fetcher = (url) =>
 	fetch(url).then((res) => res.json());
 
-export default function Home() {
+function Home() {
 	let { data } = useSWR('/api/tweets', fetcher);
 	if (!data)
 		return (
@@ -99,3 +99,5 @@ export default function Home() {
 }
 
 Home.headerTitle = 'Latest Tweets';
+
+export default Home;

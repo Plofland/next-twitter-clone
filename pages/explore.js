@@ -1,4 +1,6 @@
-export default function Explore() {
-	return <p>Explore</p>;
+function Explore() {
+	return <p className="p-4">Explore</p>;
 }
 Explore.headerTitle = 'Search';
+
+export default Explore;
