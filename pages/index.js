@@ -99,5 +99,6 @@ function Home() {
 }
 
 Home.headerTitle = 'Latest Tweets';
+Home.headerBorder = true;
 
 export default Home;
