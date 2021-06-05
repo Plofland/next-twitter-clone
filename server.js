@@ -72,10 +72,10 @@ let server = createServer({
 		server.create('tweet', 'fromPeter', {
 			text: 'Never used SWR before this'
 		});
-		server.createList('tweet', 30);
+		// server.createList('tweet', 30);
 	}
 });
 
-// setInterval(() => {
-//     server.create('tweet')
-// }, 5000)
+setInterval(() => {
+    server.create('tweet')
+}, 3000)
