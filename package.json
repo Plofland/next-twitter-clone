@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@netlify/plugin-nextjs": "^3.4.2",
     "@tailwindcss/ui": "^0.7.2",
     "date-fns": "^2.22.1",
     "faker": "^5.5.3",
