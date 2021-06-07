@@ -35,7 +35,7 @@ function Home() {
 			{stale && (
 				<div className="absolute inset-x-0 flex justify-center top-15">
 					<button
-						className="flex items-center px-4 py-1 text-white bg-blue-500 rounded-full shadow-lg"
+						className="flex items-center px-4 py-1 text-white bg-blue-500 rounded-full shadow-lg focus:outline-none focus:shadow-outline"
 						onClick={newTweets}
 					>
 						<svg

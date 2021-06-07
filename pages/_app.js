@@ -1,14 +1,18 @@
-// import '../styles/globals.css';
-import 'tailwindcss/tailwind.css';
+import '../styles/index.css';
+// import 'tailwindcss/tailwind.css';
 import { Link } from '../components/Link';
 import '../server.js';
 
 function MyApp({ Component, pageProps }) {
 	return (
 		<div className="flex flex-col h-screen">
-			<header className={`flex items-center p-4 h-13 bg-white border-b ${
-        Component.headerBorder ? "border-gray-300" : "border-transparent"
-      }`}>
+			<header
+				className={`flex items-center p-4 h-13 bg-white border-b ${
+					Component.headerBorder
+						? 'border-gray-300'
+						: 'border-transparent'
+				}`}
+			>
 				<img
 					src="https://pbs.twimg.com/profile_images/1175804192197361664/BCMBEZcf_400x400.jpg"
 					alt="profile picture"
