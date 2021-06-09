@@ -54,7 +54,7 @@ function Home() {
 				</div>
 			)}
 			{[...data?.tweets].reverse().map((tweet) => (
-				<div className="px-4 py-3 border-b border-gray-200">
+				<div className="px-4 py-3 border-b border-gray-600">
 					<div className="flex">
 						{/* Avatar */}
 						<img
@@ -66,19 +66,19 @@ function Home() {
 						<div className="flex flex-col flex-1 min-w-0">
 							{/* Header Row */}
 							<p className="flex text-sm">
-								<span className="truncate text-cool-gray-500">
-									<span className="font-bold text-cool-gray-900">
+								<span className="truncate text-cool-gray-400">
+									<span className="font-bold text-cool-gray-100">
 										{tweet.name}
 									</span>{' '}
-									<span className="text-cool-gray-500">
+									<span className="text-cool-gray-400">
 										@{tweet.username}
 									</span>
 								</span>
 								<span className="flex-shrink-0">
-									<span className="px-1 text-cool-gray-500">
+									<span className="px-1 text-cool-gray-400">
 										•
 									</span>
-									<span className="text-sm text-cool-gray-500">
+									<span className="text-sm text-cool-gray-400">
 										{format(
 											parseISO(
 												tweet.date
@@ -89,7 +89,7 @@ function Home() {
 								</span>
 							</p>
 							{/* Tweet text */}
-							<p className="text-sm">
+							<p className="text-sm text-cool-gray-100">
 								{tweet.text}
 							</p>
 							{/* Tweet Footer/Icon Bar */}
