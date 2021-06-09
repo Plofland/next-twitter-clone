@@ -14,6 +14,7 @@ module.exports = {
 	},
 	darkMode: false, // or 'media' or 'class'
 	theme: {
+		//trying to get this custom color to work without it overwriting all other color styles
 		// colors: {
 		// 	blue: colors.Blue,
 		// 	twitterDark: '#15202B',
