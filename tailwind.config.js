@@ -1,3 +1,5 @@
+// const colors = require('tailwindcss/colors')
+
 function px(pixels) {
 	return `${pixels / 16}rem`;
 }
@@ -12,6 +14,11 @@ module.exports = {
 	},
 	darkMode: false, // or 'media' or 'class'
 	theme: {
+		//trying to get this custom color to work without it overwriting all other color styles
+		// colors: {
+		// 	blue: colors.Blue,
+		// 	twitterDark: '#15202B',
+		// },
 		fontSize: {
 			xs: px(12),
 			sm: px(14),
