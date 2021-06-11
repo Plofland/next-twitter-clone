@@ -13,12 +13,7 @@ module.exports = {
 		]
 	},
 	darkMode: false, // or 'media' or 'class'
-	theme: {
-		//trying to get this custom color to work without it overwriting all other color styles
-		// colors: {
-		// 	blue: colors.Blue,
-		// 	twitterDark: '#15202B',
-		// },
+	theme: {		
 		fontSize: {
 			xs: px(12),
 			sm: px(14),
@@ -34,7 +29,10 @@ module.exports = {
 		extend: {
 			screens: {
 				xs: '480px'
-			}
+			},
+			colors: {
+				twitterBlue: '#15202B',
+			},
 		}
 	},
 	variants: {

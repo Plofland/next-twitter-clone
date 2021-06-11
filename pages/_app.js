@@ -4,9 +4,9 @@ import '../server.js';
 
 function MyApp({ Component, pageProps }) {
 	return (
-		<div className="flex flex-col h-screen bg-indigo-900">
+		<div className="flex flex-col h-screen bg-twitterBlue">
 			<header
-				className={`flex items-center p-4 h-13 bg-indigo-900 border-b ${
+				className={`flex items-center p-4 h-13 bg-twitterBlue border-b ${
 					Component.headerBorder
 						? 'border-gray-600'
 						: 'border-transparent'
@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }) {
 				<Component {...pageProps} />
 			</main>
 
-			<footer className="flex border-t border-gray-600 bg-blue-900">
+			<footer className="flex border-t border-gray-600 bg-twitterBlue">
 				<Link
 					href="/"
 					className="flex items-center justify-center w-1/4 py-4 text-center"
