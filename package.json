@@ -13,7 +13,7 @@
     "date-fns": "^2.22.1",
     "faker": "^5.5.3",
     "miragejs": "^0.1.41",
-    "next": "^10.2.3",
+    "next": "^11.0.0",
     "postcss": "^8.3.0",
     "postcss-preset-env": "^6.7.0",
     "react": "17.0.2",
