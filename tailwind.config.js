@@ -1,3 +1,5 @@
+// const colors = require('tailwindcss/colors')
+
 function px(pixels) {
 	return `${pixels / 16}rem`;
 }
@@ -11,7 +13,7 @@ module.exports = {
 		]
 	},
 	darkMode: false, // or 'media' or 'class'
-	theme: {
+	theme: {		
 		fontSize: {
 			xs: px(12),
 			sm: px(14),
@@ -27,7 +29,10 @@ module.exports = {
 		extend: {
 			screens: {
 				xs: '480px'
-			}
+			},
+			colors: {
+				twitterBlue: '#15202B',
+			},
 		}
 	},
 	variants: {

@@ -4,11 +4,11 @@ import '../server.js';
 
 function MyApp({ Component, pageProps }) {
 	return (
-		<div className="flex flex-col h-screen">
+		<div className="flex flex-col h-screen bg-twitterBlue">
 			<header
-				className={`flex items-center p-4 h-13 bg-white border-b ${
+				className={`flex items-center p-4 h-13 bg-twitterBlue border-b ${
 					Component.headerBorder
-						? 'border-gray-300'
+						? 'border-gray-600'
 						: 'border-transparent'
 				}`}
 			>
@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
 					alt="profile picture"
 					className="rounded-full w-7 h-7"
 				/>
-				<p className="text-lg ml-6 font-extrabold">
+				<p className="text-lg text-cool-gray-100 ml-6 font-extrabold">
 					{Component.headerTitle}
 				</p>
 			</header>
@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }) {
 				<Component {...pageProps} />
 			</main>
 
-			<footer className="flex border-t border-gray-200">
+			<footer className="flex border-t border-gray-600 bg-twitterBlue">
 				<Link
 					href="/"
 					className="flex items-center justify-center w-1/4 py-4 text-center"
